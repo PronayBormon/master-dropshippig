@@ -2363,7 +2363,9 @@ td {
 .table_section {
     overflow: auto;
 }
-
+.table_section::-webkit-scrollbar{
+    display: block;
+}
 .t_product {
     display: flex;
     min-width: 180px;
@@ -2653,7 +2655,9 @@ td {
     font-size: 14px;
 }
 
-.data_ p {}
+.data_ p {
+    text-align: end;
+}
 
 .data_ input {
     border: none !important;
@@ -5647,4 +5651,88 @@ fieldset:disabled a.btn {
     .wallet_countDash .dash_C h3{
         font-size: 12px;
     }
+}
+
+
+/* deposite method modal start here  */
+
+.methodBox{
+    height: 250px;
+    overflow: auto;
+    margin-top: 10px;
+    scrollbar-width: 1px;
+}
+.methodBox::-webkit-scrollbar{
+    width: 1px;
+}
+.methodBox .form_group{
+
+}
+
+.methodBox .form_group input{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+
+.methodBox .form_group label{
+    position: relative;
+    background: red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.methodBox .form_group label img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.form_group input[type="radio"]:checked + label img {
+    /* border: 2px solid red; */
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    box-shadow: 0 0 10px #7c7c7c;
+}
+/* .form_group input[type="radio"] + label::after{
+    content: '';
+    height: 0%;
+    width: 0%;
+    border-top: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s all ease-in-out;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 5px;
+}
+.form_group input[type="radio"] +label::before{
+    content: '';
+    height: 0%;
+    width: 0%;
+    border-bottom: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .5s all ease-in-out;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+.form_group input[type="radio"]:checked + label::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.form_group input[type="radio"]:checked + label::before{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+} */
+/* deposite method modal part end here  */
+.payment_ .nav-link{
+    background-color: transparent;
 }

@@ -15393,7 +15393,8 @@ body.text-sm .control-sidebar {
 }
 
 .nav-pills .nav-link {
-    color: #6c757d
+    color: #6c757d;
+    background: transparent;
 }
 
 .nav-pills .nav-link:not(.active):hover {
