@@ -104,7 +104,6 @@
 
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
-            
             <li class="nav-item">
                 <div class="d-flex align-items-center">
                     <ul class="lang" style="list-style: none;padding: 3px 5px;; margin: 0; margin-right: 5px;">
@@ -336,32 +335,40 @@
                                 <div class="col-xl-12 ms-auto mb-2">
                                     <form action="">
 
-                                        <div class="d-flex align-items-center justify-content-end">
-                                            <!-- <select name="" style="max-width: 200px;" id="" class="form-control me-2">
+                                        <div class="tpartner_">
+                                            <select name="" id="" class="form-control me-2">
                                                 <option value="" disabled selected>Select store </option>
-                                                <option value="">New agency store</option>
-                                                <option value="">Basic agency store</option>
-                                                <option value="">Standerd agency store</option>
-                                                <option value="">Premium agency store</option>
-                                                <option value="">Exclusive agency store</option>
-                                            </select> -->
-                                            <input type="text" style="max-width: 200px;" placeholder="Search user name "
+                                                <option value="">Nonactive</option>
+                                                <option value="">Expire</option>
+                                                <option value="">Active</option>
+                                            </select>
+                                            <select name="" id="" class="form-control me-2 w-100">
+                                                <option value="" disabled selected>Partner level</option>
+                                                <option value="">Level 1</option>
+                                                <option value="">Level 2</option>
+                                                <option value="">Level 3</option>
+                                            </select>
+                                            <input type="text" placeholder="Search user name "
                                                 class="form-control me-2">
-                                            <button type="button" style="    min-width: 85px;" class="btn mx-1 btn-primary "><i
+                                            <button type="button" 
+                                                class="btn mx-1 btn-primary "><i
                                                     class="fa-solid fa-magnifying-glass me-2"></i>Search</button>
+                                            <button type="button"
+                                                class="btn mx-1 btn-outline-primary ">Clear</button>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                             <!-- order table part start here -->
-                            <div class="dtble" style="width: 100%; overflow: auto;">
+                            <div class="dtble partner_page" style="width: 100%; overflow: auto;">
                                 <table class="table">
                                     <thead>
                                         <tr>
                                             <th>User name</th>
-                                            <th>Store status </th>
-                                            <th>Partner level</th>
                                             <th>Registration time</th>
+                                            <th>Store Name </th>
+                                            <th>Expiry date </th>
+                                            <th>Partner level</th>
                                             <th>Total sales </th>
                                             <th>Buy for him</th>
                                         </tr>
@@ -369,12 +376,40 @@
                                     <tbody>
                                         <tr>
                                             <td>USER_NAME</td>
-                                            <td>
+                                            <td>2024-04-15 12:00:00</td>
+                                            <td class="text-success">
                                                 <p>Basic agency store</p>
+                                            </td>
+                                            <td class="text-success">
                                                 <p>2024-04-15 12:00:00</p>
                                             </td>
                                             <td>Level 1</td>
+                                            <td>$14.00</td>
+                                            <td><a href="activeService.html">Choose</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>USER_NAME</td>
                                             <td>2024-04-15 12:00:00</td>
+                                            <td class="text-success">
+                                                <p>Basic agency store</p>
+                                            </td>
+                                            <td class="text-success">
+                                                <p>2024-04-15 12:00:00</p>
+                                            </td>
+                                            <td>Level 1</td>
+                                            <td>$14.00</td>
+                                            <td><a href="activeService.html">Choose</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>USER_NAME</td>
+                                            <td>2024-04-15 12:00:00</td>
+                                            <td class="text-success">
+                                                <p>Basic agency store</p>
+                                            </td>
+                                            <td class="text-success">
+                                                <p>2024-04-15 12:00:00</p>
+                                            </td>
+                                            <td>Level 1</td>
                                             <td>$14.00</td>
                                             <td><a href="activeService.html">Choose</a></td>
                                         </tr>

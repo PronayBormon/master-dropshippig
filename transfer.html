@@ -104,7 +104,6 @@
 
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
-            
             <li class="nav-item">
                 <div class="d-flex align-items-center">
                     <ul class="lang" style="list-style: none;padding: 3px 5px;; margin: 0; margin-right: 5px;">
@@ -330,37 +329,45 @@
                 <div class="row">
                     <div class="col-md-12">
                         <!-- content part start here  -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="s_content">
-                                    <div class="mb-2">
-                                        <a href="orderList.html" class="btn btn-primary"><i
-                                                class="fa-solid fa-arrow-left me-1"></i></a>
+                        <div class="s_content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="s_content">
+                                        <div class="mb-2 d-flex justify-content-between align-items-center">
+                                            <a href="orderList.html" class="btn btn-primary"><i
+                                                    class="fa-solid fa-arrow-left me-1"></i></a>  My Team(L-1)
+                                        </div>
+    
+                                        <!-- table part start here  -->
+                                                    <div class="form-group d-flex">
+                                                        <input type="text" class="form-control" placeholder="Search by name">
+                                                        <button class="btn ms-2 btn-primary">Search</button>
+                                                        <button class="btn ms-2 btn-outline-primary">Clear</button>
+                                                    </div>
+                                        <div class="dtble transfer_tb" style="width: 100%; overflow: auto;">
+                                            <table class="table" >
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>Partner name </th>
+                                                        <th>Registration Time</th>
+                                                        <th>Operation</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>687643</td>
+                                                        <td>jhone Due</td>
+                                                        <td>2024-02-06 12:00</td>
+                                                        <td><a href="paymentSuccess.html" class="btn btn-secondary"
+                                                            style="font-size: 12px;"><i
+                                                                class="fa-solid fa-arrow-turn-down"></i>Transfer</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+    
                                     </div>
-
-                                    <!-- table part start here  -->
-                                    <div class="dtble">
-                                        <table class="table" >
-                                            <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Partner name </th>
-                                                    <th>Registration Time</th>
-                                                    <th>Operation</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>687643</td>
-                                                    <td>partner name</td>
-                                                    <td>2024-02-06 12:00</td>
-                                                    <td><a href="paymentSuccess.html"
-                                                            class="py-1 px-3 btn-secondary">Transfer</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
