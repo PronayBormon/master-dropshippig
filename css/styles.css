@@ -1386,6 +1386,7 @@ a {
 }
 
 @media(max-width: 768px) {
+
     .pro_container {
         grid-template-columns: repeat(2, 5fr);
     }
@@ -5661,7 +5662,8 @@ input[type=checkbox]:before {
     opacity: 0;
     margin-left: 5px;
 }
-.box_text{
+
+.box_text {
     display: none;
 }
 
@@ -5687,7 +5689,8 @@ input[type=checkbox]:before {
         border: none;
     }
 }
-.i_icon p{
+
+.i_icon p {
     position: absolute;
     background: #fff;
     box-shadow: 0 0 20px #00000085;
@@ -5830,21 +5833,25 @@ input[type=checkbox]:before {
     .box_text {
         display: none;
     }
+
     .sequrity_div h5 span {
         display: block;
         opacity: 1;
     }
+
     /* .box_text{
         display: none;
     } */
-    .i_icon:hover p{
-            display: block;
+    .i_icon:hover p {
+        display: block;
     }
+
     .sequrity_div i {
         font-size: 14px;
         height: 25px;
         width: 25px;
     }
+
     .sequrity_div {
         box-shadow: 0 0 20px #0003;
         padding: 10px;
@@ -5855,90 +5862,117 @@ input[type=checkbox]:before {
         justify-content: space-between;
         align-items: start;
     }
-    .sequrity_div a{
+
+    .sequrity_div a {
         max-width: 100px;
         font-size: 12px;
     }
-    .sequrity_div i{
+
+    .sequrity_div i {
         margin: 0;
     }
+
     .sequrity_container {
         gap: 5px;
     }
 
 }
-.wallet_countDash .dash_C{
+
+.wallet_countDash .dash_C {
     display: unset;
     padding: 0;
 }
-.report_M .dash_C,.fundContainer .dash_C,.comission_container .dash_C,.store_container_partners .dash_C{
+
+.report_M .dash_C,
+.fundContainer .dash_C,
+.comission_container .dash_C,
+.store_container_partners .dash_C {
     display: unset;
     padding: 0;
 }
-.report_M .dash_C h1{
+
+.report_M .dash_C h1 {
     text-align: start;
     font-size: 14px;
 }
-.report_M .dash_C h3{
+
+.report_M .dash_C h3 {
     text-align: start;
     font-size: 14px;
 }
-.fundContainer{    
+
+.fundContainer {
     grid-template-columns: repeat(2, 3fr);
 }
-.fundContainer .dash_C h1,.fundContainer .dash_C h3,.fundContainer .dash_C p,.store_container_partners .dash_C h1,.store_container_partners .dash_C h3,.store_container_partners .dash_C p,.comission_container h1,.comission_container h3,.comission_container p,.wallet_countDash .dash_C h1,.wallet_countDash .dash_C h3, .wallet_countDash .dash_C p{
+
+.fundContainer .dash_C h1,
+.fundContainer .dash_C h3,
+.fundContainer .dash_C p,
+.store_container_partners .dash_C h1,
+.store_container_partners .dash_C h3,
+.store_container_partners .dash_C p,
+.comission_container h1,
+.comission_container h3,
+.comission_container p,
+.wallet_countDash .dash_C h1,
+.wallet_countDash .dash_C h3,
+.wallet_countDash .dash_C p {
     text-align: start !important;
 }
 
-@media(max-width: 768px){
-    .fundContainer{    
+@media(max-width: 768px) {
+    .fundContainer {
         grid-template-columns: repeat(1, 3fr);
     }
-    .partner_page  p{
+
+    .partner_page p {
         text-align: start;
     }
 }
 
 /* deposite method modal start here  */
 
-.methodBox{
+.methodBox {
     height: 250px;
     overflow: auto;
     margin-top: 10px;
     scrollbar-width: 1px;
 }
-.methodBox::-webkit-scrollbar{
+
+.methodBox::-webkit-scrollbar {
     width: 1px;
 }
-.methodBox .form_group{
 
-}
+.methodBox .form_group {}
 
-.methodBox .form_group input{
+.methodBox .form_group input {
     height: 50px;
     width: 50px;
     overflow: hidden;
 }
 
-.methodBox .form_group label{
+.methodBox .form_group label {
     position: relative;
     background: red;
     border-radius: 10px;
     cursor: pointer;
 }
-.methodBox .form_group label img{
+
+.methodBox .form_group label img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.form_group input[type="radio"]:checked + label img {
+
+.form_group input[type="radio"]:checked+label img {
     /* border: 2px solid red; */
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     box-shadow: 0 0 10px #7c7c7c;
 }
+
 /* .form_group input[type="radio"] + label::after{
     content: '';
     height: 0%;
@@ -5978,6 +6012,284 @@ input[type=checkbox]:before {
     opacity: 1;
 } */
 /* deposite method modal part end here  */
-.payment_ .nav-link{
+.payment_ .nav-link {
     background-color: transparent;
+}
+
+/* fund table part start here  */
+.fundTable {}
+
+.fundTable thead {}
+
+.fundTable tbody tr {}
+
+.mb_show {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .fundTable {}
+
+    .mb_show {
+        display: inline-block;
+    }
+
+    .fundTable thead {
+        display: none;
+    }
+
+    .fundTable tbody tr {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        border: none;
+        margin-bottom: 5px;
+        box-shadow: 0 0 10px #c8c5c5;
+    }
+
+    .fundTable tbody tr td {
+        border: none;
+        padding: 8px 15px;
+    }
+
+    .fundTable tbody tr td:nth-child(1),
+    .fundTable tbody tr td:nth-child(3) {
+        text-align: start;
+    }
+
+    .fundTable tbody tr td:nth-child(2),
+    .fundTable tbody tr td:nth-child(4) {
+        text-align: end;
+    }
+}
+
+/* fund table part end here  */
+
+/* holding table part start here  */
+.holdingTable {}
+
+.holdingTable thead {}
+
+.holdingTable tbody {}
+
+.holdingTable tbody tr {}
+
+.holdingTable tbody tr td {}
+
+.holdingTable tbody tr:nth-child(6),
+.holdingTable tbody tr:nth-child(7),
+.holdingTable tbody tr:nth-child(8) {}
+
+@media(max-width: 768px) {
+    .holdingTable tbody tr {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        box-shadow: 0 0 10px #b2afaf;
+        margin-bottom: 5px;
+    }
+
+    .holdingTable tbody tr td {
+        border: none;
+        padding: 7px 15px;
+    }
+
+    .holdingTable thead {
+        display: none;
+    }
+
+    .holdingTable tbody tr td:nth-child(6),
+    .holdingTable tbody tr td:nth-child(7),
+    .holdingTable tbody tr td:nth-child(8) {
+        display: none;
+    }
+
+    .holdingTable tbody tr td:nth-child(2),
+    .holdingTable tbody tr td:nth-child(4),
+    .holdingTable tbody tr td:nth-child(9) {
+        text-align: end;
+    }
+
+    .holdingTable tbody tr td:nth-child(1),
+    .holdingTable tbody tr td:nth-child(3),
+    .holdingTable tbody tr td:nth-child(5) {
+        text-align: start;
+    }
+}
+
+/* holding table part end here  */
+.btn_primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn_sec {
+    background-color: #182444;
+    color: #fff;
+}
+
+/* ac details table start here  */
+.ac_details {}
+
+.ac_details thead {}
+
+.ac_details tbody {}
+
+.ac_details tbody tr {}
+
+.ac_details tbody tr td {}
+
+@media(max-width: 768px) {
+
+    .ac_details tbody tr td:nth-child(1),
+    .ac_details tbody tr td:nth-child(2),
+    .ac_details tbody tr td:nth-child(6),
+    .ac_details tbody tr td:nth-child(7),
+    .ac_details tbody tr td:nth-child(8),
+    .ac_details tbody tr td:nth-child(8) {
+        display: none;
+    }
+
+    .ac_details tbody tr {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        margin-bottom: 10px;
+    }
+
+    .ac_details thead {
+        display: none;
+    }
+
+    .ac_details tbody tr td {
+        display: flex;
+        border: none;
+        padding: 5px 10px;
+    }
+
+    .ac_details tbody tr td:nth-child(3) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .ac_details tbody tr td:nth-child(4) {
+
+        grid-column: 1;
+        grid-row: 2;
+        grid-column: span 2;
+    }
+
+    .ac_details tbody tr td:nth-child(5) {
+        grid-column: 1;
+        grid-row: 3;
+        grid-column: span 2;
+    }
+
+    .ac_details tbody tr td:nth-child(9) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+/* grid-column: 1;
+    grid-row: 3;
+    grid-column: span 2; */
+/* ac details page end here  */
+
+/* withdrawal information table part start here  */
+.w_info {}
+
+.w_info thead {}
+
+.w_info tbody {}
+
+.w_info tbody tr {}
+
+.w_info tbody tr td {}
+
+@media(max-width: 768px) {
+    .w_info thead {
+        display: none;
+    }
+
+    .w_info tbody tr {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 2fr);
+
+        margin-bottom: 10px;
+
+    }
+
+    .w_info tbody tr td {
+
+        border: none;
+
+        padding: 5px 10px;
+
+    }
+
+    .w_info tbody tr td:nth-child(2),
+    .w_info tbody tr td:nth-child(4),
+    .w_info tbody tr td:nth-child(8),
+    .w_info tbody tr td:nth-child(9) {}
+
+    w_info tbody tr td:nth-child(8) {}
+
+    .w_info tbody tr td:nth-child(9) {
+
+        grid-column: 1;
+
+        grid-row: 2;
+
+    }
+
+    .w_info tbody tr td:nth-child(1),
+    .w_info tbody tr td:nth-child(3),
+    .w_info tbody tr td:nth-child(5),
+    .w_info tbody tr td:nth-child(6),
+    .w_info tbody tr td:nth-child(7) {
+        display: none;
+    }
+}
+
+/* withdrawal information table end here  */
+.infoDiv {}
+
+.infoDiv .info_data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobilerecord {
+
+width: 100%;
+}
+
+.mobilerecord ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    /* background: #fff; */
+    max-height: 90vh;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.mobilerecord ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.mobilerecord ul li p{
+    margin-bottom: 3px;
+}
+@media(max-width: 768px){
+    .pcRecord{
+        display: none;
+    }
+}
+.mdal_info .data_ p{
+    font-size: 14px;
+    text-align: end;
+    display: flex;
+    justify-content: end;
 }
